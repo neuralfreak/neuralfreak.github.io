@@ -16,7 +16,10 @@
 }
 html{box-sizing:border-box}
 *,*::before,*::after{box-sizing:inherit}
-html,body{height:100%}
+html,body{
+  height: 100%;
+  margin: 0%;
+}
 body{
   margin:0;
   background-image: url("../media/covers/Darkened.png");
@@ -37,14 +40,17 @@ body{
   align-items:center;
   justify-content:center
 }
+body{
+  min-height:100vh;
+  display:flex;
+}
+
 .container{
-  box-sizing: border-box;
+  box-sizing:border-box;
   width:100%;
   max-width:980px;
-  margin:20px auto;                 /* space from edges */
-  max-height: calc(100vh - 40px);  /* adjust 40px to whatever gap/header size you want */
-  overflow:auto;
-  -webkit-overflow-scrolling: touch;
+  max-height: calc(100vh - 48px); /* keep the padding gap */
+  overflow:auto; /* allow internal scroll if content is taller than the viewport */
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-radius:14px;
@@ -54,7 +60,7 @@ body{
   background-color: rgba(255,255,255,0.012);
   background: linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006));
   position:relative;
-  overflow:hidden; /* remove this line or change to visible/auto — see below */
+  /* remove overflow:hidden; */
 }
 @-webkit-keyframes scan{0%{-webkit-transform:translateY(-10%)}100%{-webkit-transform:translateY(110%)}} 
 @keyframes scan{0%{transform:translateY(-10%)}100%{transform:translateY(110%)}}
