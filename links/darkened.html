@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Neural Freak — Darkened</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Creepster&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="../js/resize-handler.js" defer></script>
+  
 <style>
 :root{
   --bg:#070708;
@@ -13,11 +16,12 @@
   --accent2:#ff4d9e;
   --muted:#9aa0a6;
   --glass: rgba(255,255,255,0.03);
+  --vh: 1vh;
 }
 html{box-sizing:border-box}
 *,*::before,*::after{box-sizing:inherit}
 html,body{
-  height: 100%;
+  height: calc(var(--vh) * 100);
   margin: 0%;
 }
 body{
@@ -225,6 +229,7 @@ body{
 }
 svg.icon-mark{fill:none;stroke:currentColor;stroke-width:1.2}
 </style>
+
 </head>
 <body>
 <div class="container">
