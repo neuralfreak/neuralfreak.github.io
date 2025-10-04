@@ -213,6 +213,12 @@ body{
   font-size            : 16px;
   margin-top           : 4px;
 }
+p{
+  display              : block;
+  font-size            : 18px;
+  -webkit-text-stroke  : 1px black; 
+  color                : white;
+}
 .badge{font-size:11px;padding:6px 8px;border-radius:999px;background:rgba(90,255,255,0.06);color:#5affff;color:var(--accent,#5affff);border:1px solid rgba(90,255,255,0.06)}
 .grid{
   display:grid;
