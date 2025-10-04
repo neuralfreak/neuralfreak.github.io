@@ -205,6 +205,9 @@ body{
   .header{flex-direction:column;align-items:flex-start;gap:8px}
   .meta{text-align:left;margin-left:0}
 }
+.outlined{
+  -webkit-text-stroke: 2px black; color: white;
+}
 svg.icon-mark{fill:none;stroke:currentColor;stroke-width:1.2}
 </style>
 </head>
@@ -240,7 +243,7 @@ svg.icon-mark{fill:none;stroke:currentColor;stroke-width:1.2}
       <div class="icon">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#1DB954"/><path d="M7.8 9.6c3.2-2 8.8-1 10 4.8-3.4 1.8-7.1 2.6-10.8 2.2-1.4-3.6.6-5.6.8-7z" fill="#061d0f" opacity="0.95"/></svg>
       </div>
-      <div class="info"><b>Spotify</b><span>Stream on Spotify</span></div>
+      <div class="info"><b class="outlined">Spotify</b><span class="outlined">Stream on Spotify</span></div>
       <div class="badge">Play</div>
     </a>
     <a class="link" href="https://music.apple.com/us/song/darkened/1842684315" aria-label="Apple Music">
