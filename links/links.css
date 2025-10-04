@@ -166,7 +166,7 @@ body{
   gap:12px;
   align-items:center;
   padding:14px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+  background:linear-gradient(180deg, rgba(0,0,0,0.42), rgba(0,0,0,0.14));
   border-radius:10px;
   border:1px solid rgba(0,150,255,0.3);
   transition:transform .22s cubic-bezier(.2,.9,.3,1), box-shadow .22s;
