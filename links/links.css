@@ -186,6 +186,13 @@ body{
   flex-shrink:0;
 }
 .icon svg{width:34px;height:34px}
+.icon img{
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: cover;
+  border-radius: 2px;
+}
 .info{
   flex                 : 1;
   min-width            : 0;
