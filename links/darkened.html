@@ -51,17 +51,6 @@ body{
   position:relative;
   overflow:hidden;
 }
-.scanline{
-  position:absolute;
-  inset:0;
-  background-image: linear-gradient(transparent 92%, rgba(255,255,255,0.012) 93%);
-  background-size:100% 6px;
-  mix-blend-mode:overlay;
-  pointer-events:none;
-  -webkit-animation:scan 6s linear infinite;
-  animation:scan 6s linear infinite;
-  opacity:0.6;
-}
 @-webkit-keyframes scan{0%{-webkit-transform:translateY(-10%)}100%{-webkit-transform:translateY(110%)}} 
 @keyframes scan{0%{transform:translateY(-10%)}100%{transform:translateY(110%)}}
 .header{
@@ -211,18 +200,6 @@ body{
 .small{
   font-size:11px;color:#9aa0a6;color:var(--muted,#9aa0a6)
 }
-.decor{
-  position:absolute;
-  right:-120px;
-  top:-40px;
-  width:360px;height:360px;
-  background:conic-gradient(from 180deg at 50% 50%, rgba(255,255,255,0.02), transparent 25%, rgba(255,255,255,0.01) 40%);
-  transform:rotate(12deg);
-  -webkit-transform:rotate(12deg);
-  filter:blur(30px);
-  mix-blend-mode:screen;
-  pointer-events:none;
-}
 @media(max-width:720px){
   .controls{grid-template-columns:1fr}
   .header{flex-direction:column;align-items:flex-start;gap:8px}
@@ -233,8 +210,6 @@ svg.icon-mark{fill:none;stroke:currentColor;stroke-width:1.2}
 </head>
 <body>
 <div class="container">
-  <div class="scanline"></div>
-  <div class="decor"></div>
   <div class="header">
     <div class="logo">
       <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
