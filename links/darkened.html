@@ -38,8 +38,13 @@ body{
   justify-content:center
 }
 .container{
+  box-sizing: border-box;
   width:100%;
   max-width:980px;
+  margin:20px auto;                 /* space from edges */
+  max-height: calc(100vh - 40px);  /* adjust 40px to whatever gap/header size you want */
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-radius:14px;
@@ -49,7 +54,7 @@ body{
   background-color: rgba(255,255,255,0.012);
   background: linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006));
   position:relative;
-  overflow:hidden;
+  overflow:hidden; /* remove this line or change to visible/auto — see below */
 }
 @-webkit-keyframes scan{0%{-webkit-transform:translateY(-10%)}100%{-webkit-transform:translateY(110%)}} 
 @keyframes scan{0%{transform:translateY(-10%)}100%{transform:translateY(110%)}}
